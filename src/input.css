@@ -15,6 +15,11 @@
         margin-top: 2.5rem;
     }
 
+    #button_flex #button_flex_item_2
+    {
+        flex-direction: column;
+    }
+
     #fotter_flex, #under_footer_flex
     {
         padding-top: 5rem;
@@ -73,16 +78,6 @@
     #get_started_button_flex
     {
         margin-bottom: 1rem !important;
-    }
-
-    #sign_up_button_flex
-    {
-        margin-bottom: 1rem;
-    }
-
-    #demo_button_flex
-    {
-        margin-bottom: 5rem;
     }
 
     #sign_up_button, #demo_button
@@ -205,19 +200,30 @@
     #new_feature_flex
     {
         text-align: center;
-        margin-left: 10.2rem !important;
-        margin-right: 10rem !important;
     }
     
     #button_flex
     {
-        margin-left: 13rem;
-        margin-right: 12rem;
+        display: flex;
+    }
+
+    #button_flex img
+    {
+        width: 50%;
+        height: 50%;
     }
     
-    #sign_up_button_flex
+    #button_flex_item_2
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #flex_item_1
     {
         order: 1;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #sign_up_button, #demo_button
@@ -311,8 +317,8 @@
 
     #features_flex_content_2
     {
-        margin-left: 15rem;
-        margin-right: 15rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 
     #features_list_flex
