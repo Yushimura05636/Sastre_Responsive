@@ -66,7 +66,7 @@
 
     #learn_more_button, #demo_button
     {
-        border: 1px outset rgba(0, 0, 0, 0.486);
+        border: 1px solid rgba(128, 128, 128, 0.466);
         background-color: white;
     }
 
@@ -226,27 +226,33 @@
         margin-right: auto;
     }
 
-    #sign_up_button, #demo_button
+    #sign_up_button, #demo_button, #get_started_button, #learn_more_button
     {
         padding: 0.8rem;
         border-radius: 0.3rem;
     }
 
-    #sign_up_button
+    #sign_up_button, #get_started_button
     {
         padding-left: 2rem;
         padding-right: 2rem;
     }
 
-    #demo_button
+    #demo_button, #learn_more_button
     {
-        border: 1px inset black;
+        border: 1px solid rgba(128, 128, 128, 0.466);
         background-color: white;
         padding-left: 2rem;
         padding-right: 2rem;
         background-image: url("../img/play-circle.png");
         background-repeat: no-repeat;
         background-position: 10% 50%;
+    }
+
+    #learn_more_button
+    {
+        background: none !important;
+        border: 1px solid rgba(128, 128, 128, 0.466);
     }
 
     #title_text
@@ -329,7 +335,7 @@
 
     #features_list_flex img
     {
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     .features_list_flex
@@ -337,4 +343,39 @@
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
+    #faq_list_flex
+    {
+        margin: 0px 15rem;
+    }
+}
+
+
+/* own css custom function */
+.mt-20
+{
+    margin-top: 10rem;
+}
+
+.mx-50
+{
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+/* no margin left or right */
+.no-mx
+{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.text-3xl
+{
+    font-size: 3rem;
+}
+
+.mt-12
+{
+    margin-top: 8rem;
 }

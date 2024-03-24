@@ -598,6 +598,11 @@ video {
   margin-right: 0.25rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -618,6 +623,16 @@ video {
   margin-right: auto;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -633,17 +648,20 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
 .mb-0 {
   margin-bottom: 0px;
 }
 
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .ml-3 {
@@ -654,8 +672,16 @@ video {
   margin-left: 1.5rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .mt-10 {
@@ -670,16 +696,8 @@ video {
   margin-top: 0.75rem;
 }
 
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .block {
@@ -863,6 +881,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -870,6 +892,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base {
@@ -1003,7 +1030,7 @@ video {
 
   #learn_more_button, #demo_button
     {
-    border: 1px outset rgba(0, 0, 0, 0.486);
+    border: 1px solid rgba(128, 128, 128, 0.466);
     background-color: white;
   }
 
@@ -1164,27 +1191,33 @@ video {
     margin-right: auto;
   }
 
-  #sign_up_button, #demo_button
+  #sign_up_button, #demo_button, #get_started_button, #learn_more_button
     {
     padding: 0.8rem;
     border-radius: 0.3rem;
   }
 
-  #sign_up_button
+  #sign_up_button, #get_started_button
     {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  #demo_button
+  #demo_button, #learn_more_button
     {
-    border: 1px inset black;
+    border: 1px solid rgba(128, 128, 128, 0.466);
     background-color: white;
     padding-left: 2rem;
     padding-right: 2rem;
     background-image: url("../img/play-circle.png");
     background-repeat: no-repeat;
     background-position: 10% 50%;
+  }
+
+  #learn_more_button
+    {
+    background: none !important;
+    border: 1px solid rgba(128, 128, 128, 0.466);
   }
 
   #title_text
@@ -1265,7 +1298,7 @@ video {
 
   #features_list_flex img
     {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
   .features_list_flex
@@ -1273,6 +1306,42 @@ video {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+
+  #faq_list_flex
+    {
+    margin: 0px 15rem;
+  }
+}
+
+/* own css custom function */
+
+.mt-20
+{
+  margin-top: 10rem;
+}
+
+.mx-50
+{
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+/* no margin left or right */
+
+.no-mx
+{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.text-3xl
+{
+  font-size: 3rem;
+}
+
+.mt-12
+{
+  margin-top: 8rem;
 }
 
 .hover\:bg-gray-700:hover {
