@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div name="navbar">
@@ -16,19 +17,9 @@
             <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
               <span class="absolute -inset-0.5"></span>
               <span class="sr-only">Open main menu</span>
-              <!--
-                Icon when menu is closed.
-    
-                Menu open: "hidden", Menu closed: "block"
-              -->
               <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="burger-menu">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
-              <!--
-                Icon when menu is open.
-    
-                Menu open: "block", Menu closed: "hidden"
-              -->
               <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
@@ -41,10 +32,10 @@
             <div class="hidden sm:ml-6 sm:block">
               <div class="flex space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
-                <a href="#" class="text-black  hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
-                <a href="#" class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
-                <a href="#" class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+                <a href="#" class="text-stone-700 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+                <a href="#" class="text-stone-700  hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Product</a>
+                <a href="#" class="text-stone-700 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Resources</a>
+                <a href="#" class="text-stone-700 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Pricing</a>
               </div>
             </div>
           </div>
@@ -75,17 +66,533 @@
     </nav>
   </div>
   <div>
-    <div class="bg-green-100 text-green-600 mx-6 my-10 text-xs text-center rounded-lg p-0.5">
-      <span class="mx-4 bg-white p-0.3 rounded-lg">New feature</span> Check out the team dashboard →
+    <div class="flex bg-green-100 text-green-600 mx-6 my-10 text-xs text-center rounded-lg p-0.5" id="new_feature_flex">
+      <div class="flex-auto">
+        <span class="bg-white p-1 rounded-lg">New feature</span> Check out the team dashboard
+      </div>
+      <div class="flex-auto w-6">
+        <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.833328 6.00016H10.1667M10.1667 6.00016L5.5 1.3335M10.1667 6.00016L5.5 10.6668" stroke="#16B364" stroke-width="1.3333" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </div>
     </div>
-    <div class="text-center mx-1 text-2xl font-bold my-5">
+    <div class="text-center mx-1 text-2xl font-bold my-5 mx-5" id="title_text">
       Beautiful analytics to grow smarter
     </div>
     <div >
-      <p class="text-center mx-6 text-zinc-500">
+      <p class="text-center mx-5 text-zinc-500" id="title_text_content">
         Powerful, self-serve product and growth analytics to help you convert,
         engage, and retain more users. Trusted by over over 4,000 startups
       </p>
+    </div>
+    <div class="flex" id="button_flex">
+      <div id="sign_up_button_flex" class="mx-1 flex-auto">
+        <button class="bg-green-700 text-white" id="sign_up_button">Sign Up</button>
+      </div>
+      <div id="demo_button_flex" class="flex-auto mx-1">
+        <button class="text-stone-700" id="demo_button">
+          Demo
+        </button>
+      </div>
+    </div>
+    <div class="" id="macbook_image_flex">
+      <img src="../img/Macbook Pro 16 mockup.png" id="macbook_image_mobile" />
+      <img class="hidden" src="../img/Macbook Pro 16 mockup(1).png" id="macbook_image_desktop" />
+    </div>
+    <div class="" id="social_image_flex">
+      <img src="../img/Social proof section.png" id="social_image_mobile" />
+      <img class="hidden" src="../img/Social proof section(1).png" id="social_image_desktop" />
+    </div>
+    <!--Mobile Section-->
+    <div id="front_page_mobile">
+      <div class="flex text-center" id="features_flex">
+        <div class="flex-auto text-green-600 font-bold">
+          Features
+        </div>
+        <div class="flex-auto my-2 mx-5 text-2xl font-bold mx-2" id="features_flex_content_1">
+          Analytics that feels like it's from the future
+        </div>
+        <div class="flex-auto my-5 mx-5 text-zinc-500" id="features_flex_content_2">
+          Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over over 4,000 startups 
+        </div>
+      </div>
+      <div class="mt-20">
+        <div class="mx-5">
+          <img src="../img/mail.png" />
+        </div>
+        <div class="flex m-5" id="inboxes_flex">
+          <div class="flex-auto font-bold text-2xl my-5">
+            Share team inboxes
+          </div>
+          <div class="flex-auto text-zinc-500 justify-left">
+            Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.
+          </div>
+        </div>
+        <div class="justify-left">
+          <div class="flex mt-10 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" />
+            </div>
+            <div class="flex-auto">
+              Leverage automation to move fast
+            </div>
+          </div>
+          <div class="flex mt-3 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" />
+            </div>
+            <div class="flex-auto">
+              Always give customers a human to chat to
+            </div>
+          </div>
+          <div class="flex mt-3 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" width="100%" />
+            </div>
+            <div class="flex-auto">
+              Automate customer support and close leads faster
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex-auto">
+            <img src="../img/Container.png" id="container_image_flex" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mx-1">
+          <img src="../img/Featured icon.png" />
+        </div>
+        <div class="flex m-5" id="inboxes_flex">
+          <div class="flex-auto font-bold text-2xl my-5">
+            Deliver instant answers
+          </div>
+          <div class="flex-auto text-zinc-500 justify-left">
+            An all-in-one customer service platform that helps you balance everything your customers need to be happy.
+          </div>
+        </div>
+        <div class="justify-left">
+          <div class="flex mt-10 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" />
+            </div>
+            <div class="flex-auto">
+              Keep your customers in the loop with live chat
+            </div>
+          </div>
+          <div class="flex mt-3 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" />
+            </div>
+            <div class="flex-auto">
+              Embeded help articles right on your website
+            </div>
+          </div>
+          <div class="flex mt-3 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" width="100%" />
+            </div>
+            <div class="flex-auto">
+              Customers never have to leave the page to find an answer
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex-auto">
+            <img src="../img/Container(1).png" id="container_image_flex" />
+          </div>
+        </div>
+      </div>
+      <div class="mt-10">
+        <div class="mx-1">
+          <img src="../img/Featured icon(1).png" />
+        </div>
+        <div class="flex m-5" id="inboxes_flex">
+          <div class="flex-auto font-bold text-2xl my-5">
+            Manage your team with reports 
+          </div>
+          <div class="flex-auto text-zinc-500 justify-left">
+            Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
+          </div>
+        </div>
+        <div class="justify-left">
+          <div class="flex mt-10 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" />
+            </div>
+            <div class="flex-auto">
+              Filter, export, and drilldown on the data quickly
+            </div>
+          </div>
+          <div class="flex mt-3 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" />
+            </div>
+            <div class="flex-auto">
+              Save, schedule, and automate reports to your inbox
+            </div>
+          </div>
+          <div class="flex mt-3 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" width="100%" />
+            </div>
+            <div class="flex-auto">
+              Connect the tools you already use with 100+ integrations
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex-auto">
+            <img src="../img/Content(1).png" id="content_image_flex" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex text-center" id="integrations_flex">
+          <div class="flex-auto text-green-600 font-bold">
+            Integrations
+          </div>
+          <div class="flex-auto my-2 mx-5 text-2xl font-bold mx-2">
+            Get more value from your tools
+          </div>
+          <div class="flex-auto my-5 mx-5 text-zinc-500">
+            Connect your tools, connect your teams. With over 200 apps already available in our directory, your team’s favourite tools are just a click away.  
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex-auto">
+            <img src="../img/Container(2).png" id="container_image_flex" />
+          </div>
+        </div>
+        <div class="my-10 mx-5 flex">
+          <div class="flex-auto" id="integration_button_flex">
+            <button class="bg-green-700 text-white" id="integration_button">View all integrations</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex">
+          <div class="flex-auto mt-10">
+            <img src="../img/Featured icon.png" id="feature_image_flex" />
+          </div>
+        </div>
+        <div class="flex m-5" id="inboxes_flex">
+          <div class="flex-auto text-center font-bold text-2xl my-5">
+            Unleash the full power of data
+          </div>
+          <div class="flex-auto text-center text-zinc-500">
+            Everything you need to convert, engage, and retain more users.  
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex-auto">
+            <img src="../img/Content(2).png" id="content_image_flex" />
+          </div>
+        </div>
+      </div>
+      <div class="flex bg-green-100 mt-10 text-center mx-2 rounded-md p-5" id="trial_flex">
+        <div class="flex-auto text-green-950 text-2xl font-bold my-5">
+          Start your free trial 
+        </div>
+        <div class="flex-auto text-green-600">
+          Join over 4,000+ startups already growing with Untitled.
+        </div>
+        <div class="flex" id="button_flex">
+          <div id="get_started_button_flex" class="mx-1 flex-auto">
+            <button class="bg-green-700 text-white" id="get_started_button">Get started</button>
+          </div>
+          <div id="learn_more_button_flex" class="flex-auto mx-1">
+            <button class="text-stone-700" id="learn_more_button">
+              <i class="fa fa-vide"></i>Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex text-center" id="integrations_flex">
+        <div class="flex-auto my-2 mx-5 text-2xl mx-2">
+          Untitled has saved us thousands of hours of work and has unlock data insights we never thought possible.
+        </div>
+        <div class="flex-auto my-5 mx-5">
+          <img src="../img/Avatar and text.png" />
+        </div>
+        <div class="flex-auto my-5 mx-5">
+          <img src="../img/Pagination.png" />
+        </div>
+      </div>
+      <div class="mt-20">
+        <div class="flex m-5" id="inboxes_flex">
+          <div class="flex-auto font-bold text-2xl my-5">
+            Join 4,000+ startups growing with Untitled
+          </div>
+        </div>
+        <div class="justify-left">
+          <div class="flex mt-10 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" />
+            </div>
+            <div class="flex-auto">
+              30-day free trial
+            </div>
+          </div>
+          <div class="flex mt-3 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" />
+            </div>
+            <div class="flex-auto">
+              Personalized onboarding
+            </div>
+          </div>
+          <div class="flex mt-3 ml-6 mb-1 text-zinc-500" id="inboxes_list_flex">
+            <div class="mr-3">
+              <img src="../img/Check icon.png" width="100%" />
+            </div>
+            <div class="flex-auto">
+              Access to all features
+            </div>
+          </div>
+        </div>
+        <div class="flex" id="button_flex">
+          <div id="get_started_button_flex" class="mx-1 flex-auto">
+            <button class="bg-green-700 text-white" id="get_started_button">Get started</button>
+          </div>
+          <div id="learn_more_button_flex" class="flex-auto mx-1">
+            <button class="text-stone-700" id="learn_more_button">
+              <i class="fa fa-vide"></i>Learn more
+            </button>
+          </div>
+        </div>
+        <div class="flex my-10">
+          <div class="flex-auto">
+            <img src="../img/Container(3).png" id="container_image_flex" />
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-950" id="fotter_flex">
+        <div class="flex-row">
+          <div class="flex-auto">
+            <img src="../img/Logo(1).png" />
+          </div>
+          <div class="my-5">
+            Design amazing digital experiences that create more happy in the world.
+          </div>
+        </div>
+        <div class="flex my-10">
+          <div class="flex-row flex-auto text-gray-400">
+            Product
+            <div class="flex-auto my-5 text-white">
+              Overview
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Features
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Solutions <span class="rounded-full mx-2 text-black text-xs p-1 bg-white">New</span>
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Tutorials
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Pricing
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Releases
+            </div>
+          </div>
+          <div class="flex-row flex-auto text-gray-400">
+            Company
+            <div class="flex-auto my-5 text-white">
+              About us
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Careers
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Press
+            </div>
+            <div class="flex-auto my-5 text-white">
+              News
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Media Kit
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Contact
+            </div>
+          </div>
+        </div>
+        <div class="flex my-10">
+          <div class="flex-row flex-auto text-gray-400">
+            Resources
+            <div class="flex-auto my-5 text-white">
+              Blog
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Newsletter
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Events
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Help Centre
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Tutorials
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Support
+            </div>
+          </div>
+          <div class="flex-row flex-auto text-gray-400">
+            Social
+            <div class="flex-auto my-5 text-white">
+              Twitter
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Linkedln
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Facebook
+            </div>
+            <div class="flex-auto my-5 text-white">
+              GitHub
+            </div>
+            <div class="flex-auto my-5 text-white">
+              AngelList
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Dribble
+            </div>
+          </div>
+        </div>
+        <div class="flex my-10 mb-0">
+          <div class="flex-row flex-auto text-gray-400">
+            Legal
+            <div class="flex-auto my-5 text-white">
+              Terms
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Privacy
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Cookies
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Licenes
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Settings
+            </div>
+            <div class="flex-auto my-5 text-white">
+              Contact
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex bg-gray-900" id="under_footer_flex">
+        <div class="flex-auto">
+          <img src="../img/Container(4).png" />
+        </div>
+      </div>
+    </div>
+    <!--Desktop Section-->
+    <div>
+      <div class="flex text-center" id="features_flex">
+        <div class="flex-auto text-green-600 font-bold">
+          Features
+        </div>
+        <div class="flex-auto my-2 mx-5 text-2xl font-bold mx-2" id="features_flex_content_1">
+          Analytics that feels like it's from the future
+        </div>
+        <div class="flex-auto my-5 mx-5 text-zinc-500" id="features_flex_content_2">
+          Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over over 4,000 startups 
+        </div>
+      </div>
+      <div>
+        <div class="flex text-center" id="features_list_flex">
+          <div class="flex-col flex-auto">
+            <img src="../img/Featured icon.svg" />
+            <div class="flex-auto">
+              Share team inboxes
+            </div>
+            <div class="flex-auto text-stone-700 features_list_flex">
+              Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.
+            </div>
+          </div>
+          <div class="flex-col flex-auto">
+            <img src="../img/Featured icon.png" />
+            <div class="flex-auto">
+              Deliver instant answers
+            </div>
+            <div class="flex-auto text-stone-700 features_list_flex">
+              An all-in-one customer service platform that helps you balance everything your customers need to be happy.
+            </div>
+          </div>
+          <div class="flex-col flex-auto">
+            <img src="../img/Featured icon(1).png" />
+            <div class="flex-auto">
+              Manage your team with reports
+            </div>
+            <div class="flex-auto text-stone-700 features_list_flex">
+              Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.  
+            </div>
+          </div>
+        </div>
+        <div class="flex text-center" id="features_list_flex">
+          <div class="flex-col flex-auto">
+            <img src="../img/Featured icon(1).svg" />
+            <div class="flex-auto">
+              Connect with customers
+            </div>
+            <div class="flex-auto text-stone-700 features_list_flex">
+              Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.  
+            </div>
+          </div>
+          <div class="flex-col flex-auto">
+            <img src="../img/Featured icon(2).svg" />
+            <div class="flex-auto">
+              Connect the tools you already use
+            </div>
+            <div class="flex-auto text-stone-700 features_list_flex">
+              Explore 100+ integrations that make your day-to-day workflow more efficient and familiar. Plus, our extensive developer tools.  
+            </div>
+          </div>
+          <div class="flex-col flex-auto">
+            <img src="../img/Featured icon(3).svg" />
+            <div class="flex-auto">
+              Our people make the difference
+            </div>
+            <div class="flex-auto text-stone-700 features_list_flex">
+              We’re an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex text-center" id="features_flex">
+        <div class="flex-auto" id="features_company_image_flex">
+          <img src="../img/Company logo.png" />
+        </div>
+        <div class="flex-auto my-2 text-2xl font-bold mx-2" id="features_flex_content_1">
+          We’ve been using Untitled to kick start every new project and can’t imagine working without it.
+        </div>
+        <div class="flex-auto my-5 mx-5 text-zinc-500" id="features_avatar_image_flex">
+          <img src="../img/Avatar and text(1).png" />
+        </div>
+      </div>
+      <div class="flex text-center" id="features_flex">
+        <div class="flex-auto text-green-600 font-bold">
+          Features
+        </div>
+        <div class="flex-auto my-2 mx-5 text-2xl font-bold mx-2" id="features_flex_content_1">
+          Cutting-edge features for advanced analytics
+        </div>
+        <div class="flex-auto my-5 mx-5 text-zinc-500" id="features_flex_content_2">
+          Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over over 4,000 startups 
+        </div>
+      </div>
+      <div class="flex" id="content_image_flex">
+        <img src="../img/Content.svg" />
+      </div>
     </div>
   </div>
 </body>
