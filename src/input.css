@@ -197,6 +197,11 @@
         display: none;    
     }
 
+    #desktop_section
+    {
+        display: block;
+    }
+
     #new_feature_flex
     {
         text-align: center;
@@ -378,4 +383,15 @@
 .mt-12
 {
     margin-top: 8rem;
+}
+
+.my-20
+{
+    margin-top: 10rem;
+    margin-bottom: 10rem !important;
+}
+
+.mr-50
+{
+    margin-right: 20rem !important;
 }
