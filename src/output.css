@@ -844,6 +844,19 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-inherit {
+  background-color: inherit;
+}
+
+.bg-sky-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -1182,6 +1195,10 @@ video {
     display: none;
   }
 
+  #home
+    {
+  }
+
   #desktop_section
     {
     display: block;
@@ -1373,11 +1390,6 @@ video {
 {
   margin-top: 10rem;
   margin-bottom: 10rem !important;
-}
-
-.mr-50
-{
-  margin-right: 20rem !important;
 }
 
 .hover\:bg-gray-700:hover {

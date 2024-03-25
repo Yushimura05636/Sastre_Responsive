@@ -197,6 +197,10 @@
         display: none;    
     }
 
+    #home
+    {
+    }
+
     #desktop_section
     {
         display: block;
@@ -389,9 +393,4 @@
 {
     margin-top: 10rem;
     margin-bottom: 10rem !important;
-}
-
-.mr-50
-{
-    margin-right: 20rem !important;
 }
