@@ -3,6 +3,11 @@
 @tailwind utilities; 
 
 @media (min-width: 65px) and (max-width: 640px){
+    #front_page_mobile
+    {
+        display: block;
+    }
+
     #profile
     {
        display: none;
@@ -192,9 +197,10 @@
 
 @media (min-width: 640px) 
 {
+
     #front_page_mobile
     {
-        display: none;    
+        display: none;
     }
 
     #home
@@ -363,7 +369,12 @@
 /* own css custom function */
 .mt-20
 {
-    margin-top: 10rem;
+    margin-top: 20rem !important;
+}
+
+.mt-15
+{
+    margin-top: 5.6rem !important;
 }
 
 .mx-50
